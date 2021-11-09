@@ -87,10 +87,9 @@ function addOnEnterListener(e){
 function handleResponse(resp){
     resp = resp.toString().toLowerCase();
     var response = {
-        "main" : redirect("./home"),
         "help" : createMessage(
             "Lists of available commands:<br>" +
-            "-Help<br>-Main<br>-Clear<br>-Invert<br>-Prototype"
+            "-Help<br>-Clear<br>-Invert<br>-Prototype"
         ),
         "clear": createMessage("Consider refreshing the page?"),
         "invert": redirect("./prototype/inverted-terminal.html"),
